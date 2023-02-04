@@ -65,7 +65,7 @@ img{
 
 .card{
     padding: 40px;
-    width: 280px;
+    width: 380px;
 }
 
 .card-header{
@@ -133,6 +133,10 @@ img{
     font-family: 'poppins';
 }
 
+.card-box label a{
+    color:rgba(0, 0, 255, 0.536)
+}
+
 .card-footer .submit:hover{
     background-color: rgba(220, 20, 60, 0.701);
 }
@@ -175,9 +179,13 @@ img{
 }
 
 .recuperacao{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
+    gap: 10px;
+    text-decoration: underline;
 }
+
 
 @media screen and (max-width: 900px){
     main{
@@ -203,7 +211,8 @@ img{
     }
 
     .card{
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         margin: auto;
     }
 
@@ -226,7 +235,7 @@ img{
     }
 
     .card-content-area input {
-        color: rgb(61, 61, 192);
+        color: #000;
         border-bottom: 1px solid rgb(79, 77, 77);
     }
 
@@ -238,5 +247,9 @@ img{
     .card-footer a{
         color: rgba(0, 0, 0, 0.886);
         font-weight: 700;
+    }
+
+    .recuperacao a{
+        color: rgba(0, 0, 255, 0.536);
     }
 }
