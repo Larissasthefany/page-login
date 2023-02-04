@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'hacker';
+    src: url(../font/VCR_OSD_MONO_1.001.ttf);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.935);
+}
+
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    margin: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.about{
+    background: url(../img/hacker.jpg) center center ;
+    min-height: 85vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px  0 0 20px;
+}
+
+.about .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: #000;
+    font-size: 1.5em;
+    opacity: 0.8;
+    text-align: center;
+    gap: 10px;
+    font-family: 'poppins';
+}
+
+/* .about .sub-titulo{
+    font-size: 1.2em;
+    padding-left: 50px;
+    color: #005f73;
+} */
+
+.about .sub-titulo a{
+    color: #fff;
+    text-decoration: underline;
+} 
+img{
+    width: 100%;
+    object-fit: cover ;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #26206F; */
+    background-color: #18B1B4;
+    border-radius: 0 20px 20px 0;
+    /* width: 500px; */
+}
+
+.card{
+    padding: 40px;
+    width: 280px;
+}
+
+.card-header{
+    padding-bottom: 20px;
+    color: #000;
+    font-size: 2em;
+    font-family: 'poppins';
+}
+
+.card-content-area label{
+    color: #fff;
+    font-size: 1.2em;
+    opacity: 0.8;
+    font-family: 'poppins';
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+
+}
+
+.card-content-area input {
+    margin-top: 20px;
+    font-size: 18px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+    background-color: #27928d;
+    border:none;
+    color:#e1e1e1;
+    margin: 10px 0;
+    font-family: 'poppins';
+    transition: 0.3 ease-in-out;
+}
+
+.card-box{
+    margin:0 12px 0 0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    padding: 0 20px 20px 0;
+}
+
+.card-box label{
+    color: #fff;
+    font-size: 1em;
+    font-family: 'poppins';
+}
+
+.card-footer .submit:hover{
+    background-color: rgba(220, 20, 60, 0.701);
+}
+
+.card-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+.card-redes i{
+    margin: 7px;
+    font-size: 19px;
+}
+
+.fa-instagram, .fa-pinterest:hover{
+    color: rgba(220, 20, 60, 0.701);
+}
+
+.card-footer a {
+    text-align: center;
+    font-size: 1em;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'poppins';
+}
+
+.card-footer a:hover{
+    color: rgb(48, 48, 204);
+}
