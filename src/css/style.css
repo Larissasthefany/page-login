@@ -1,8 +1,3 @@
-/* @font-face {
-    font-family: 'hacker';
-    src: url(../font/VCR_OSD_MONO_1.001.ttf);
-} */
-
 main{
     display: flex;
     align-items: center;
@@ -22,33 +17,28 @@ main{
     margin: 4rem;
 }
 
-.about{
-    background: url(../img/hacker.jpg) center center ;
+.flex{
+    background: url(../img/image.jpg) center center ;
     min-height: 80vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 450px;
     border-radius: 20px  0 0 20px;
 }
 
-.about .titulo{
+/* .about .titulo{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding-top: 50px;
     color: #18b1b4b6;
     font-size: 1.5em;
     opacity: 0.8;
     text-align: center;
     gap: 10px;
     font-family: 'poppins';
-}
-
-.about .sub-titulo a{
-    color: #fff;
-    text-decoration: underline;
-} 
+} */
 img{
     width: 100%;
     object-fit: cover ;
@@ -59,7 +49,7 @@ img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #18B1B4;
+    background-color: #fff;
     border-radius: 0 20px 20px 0;
 }
 
@@ -68,17 +58,36 @@ img{
     width: 380px;
 }
 
-.card-header{
-    padding-bottom: 20px;
-    color: #e6e1e1d9;
+.card-header a{
+    color: #575252c7;
     font-size: 2em;
     font-family: 'poppins';
     letter-spacing: 4px;
+    text-align: center;
 }
 
+.card-header .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.card-header .logo  .fa-user{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.815);
+    border-radius: 50%;
+    /* padding: 11px; */
+}
 
 .card-content-area label{
-    color: #fff;
+    color: #575252c7;
     font-size: 1.2em;
     opacity: 0.8;
     font-family: 'poppins';
@@ -98,7 +107,7 @@ img{
     border:none;
     border-bottom: 1px solid #e1e1e1;
     outline: none;
-    color: #fff;
+    color: #575252c7;
 }
 
 .card-footer {
@@ -128,7 +137,7 @@ img{
 }
 
 .card-box label{
-    color: #fff;
+    color: #575252c7;
     font-size: 1em;
     font-family: 'poppins';
 }
@@ -153,23 +162,36 @@ img{
     margin: 7px;
     font-size: 19px;
     border-radius: 50%;
-    border: 2px solid #ffffff75;
+    border: 2px solid #fff;
     display: inline-flex;
     align-items: center;
     width: 40px;
     height: 40px;
     justify-content: center;
+    color: #fff;
+}
+
+.fa-facebook-f{
+    background-color: #20293C;
+}
+
+.fa-google-plus-g, .fa-pinterest-p{
+    background-color: #7f362cd8;
+}
+
+.fa-twitter{
+    background-color: rgba(44, 44, 182, 0.87);
 }
 
 .card-redes i:hover{
-    color: rgba(0, 0, 255, 0.362);
+    background-color: rgba(128, 128, 128, 0.618);
 }
 
 .card-footer a {
     text-align: center;
     font-size: 1em;
     opacity: 0.8;
-    color: #fff;
+    color: rgba(82, 82, 236, 0.809);
     text-decoration: none;
     font-family: 'poppins';
 }
@@ -207,7 +229,6 @@ img{
     .login{
         width: 100%;
         height: 100%;
-        background-color: #ffffff;
     }
 
     .card{
@@ -216,11 +237,11 @@ img{
         margin: auto;
     }
 
-    .card-header{
+    .card-header h2, i{
         color: #575252c7;
     }
 
-    .card-header::first-letter{
+    .card-header h2::first-letter{
         color: #27928d;
     }
 
